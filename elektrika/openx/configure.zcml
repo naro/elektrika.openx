@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="elektrika.openx">
+
+   <include package=".browser" />
+   <include package=".portlets" />
+
+  <utility 
+      provides=".interfaces.IOpenXJSInvocation"
+      factory=".utilities.OpenXJSInvocation" />
+      
+  <genericsetup:registerProfile
+      name="default"
+      title="Openx Banners"
+      directory="profiles/default"
+      description="Extension profile for the Openx banners."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+      
+</configure>

@@ -1,0 +1,42 @@
+Changelog
+=========
+
+1.3 - 2010-01-03
+----------------
+
+- make it work with older zope/plone instances
+
+1.2 - 2009-09-02
+----------------
+
+- Do not use default server. There is no default server now.
+
+- First public release
+
+1.1.1 - 2009-07-13
+------------------
+
+- just re-release
+
+1.1 - 2009-07-13
+----------------
+
+- just release
+
+1.0.3 - 2009-03-09
+------------------
+
+- Renamed SMFBannerViewlet class to OpenXBannerViewlet (it was typo)
+
+1.0.2 - 2009-03-07
+------------------
+
+- Added Plone site property openx_server which allows to set URI of the server.
+  It accepts domain only!!! so "ad.elektrika.info' or 'ad.dms4u.cz' is correct
+  value. Do not use http:// prefix.
+
+1.0 - Unreleased
+----------------
+
+* Initial release
+

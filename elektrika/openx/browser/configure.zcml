@@ -1,0 +1,41 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="elektrika.openx">
+
+    <browser:resource
+        file="elektrika.openx.css"
+        name="elektrika.openx.css"
+              />
+
+    <browser:page
+        for="*"
+        name="openx_view"
+        class=".openx.OpenXView"
+        permission="zope.Public"
+        allowed_attributes="code"
+        />
+        
+
+    <!-- To use this viewlet, add this code to your configure.zcml
+    <browser:viewlet
+        name="elektrika.banner"  - change name (for example top468 etc.)
+        for="*"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"   - CHANGE MANAGER
+        class="elektrika.openx.browser.viewlets.OpenXBannerViewlet"
+        template="banner.pt"  - change template, copy contents of banner.pt there and don't forget to set "ZONE" parameter inside template 
+        layer=".interfaces.IThemeSpecific"  - specify your Layer or remove this line
+        permission="zope.Public"
+        />              
+        
+    Finally add this to viewlets.xml:
+      <?xml version="1.0"?>
+      <object>
+      <order manager="plone.portalheader"
+         based-on="Plone Default">
+          <viewlet name="elektrika.banner" - change name to same value as above
+                insert-after="plone.logo" />
+      </order>
+      </object>
+    -->
+</configure>

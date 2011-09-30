@@ -1,0 +1,11 @@
+.portletNoBorder .portletItem {
+    border: none;
+}
+
+.portletNoBorder .portletHeader {
+    display: none;
+}
+
+.portletNoBorder .portletFooter {
+    display: none;
+}

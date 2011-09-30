@@ -1,0 +1,20 @@
+<dl class="portletOpenX" 
+    i18n:domain="elektrika.openx"
+    tal:attributes="class python:(not view.showBorder and 'portletNoBorder ' or '') + view.cssClass;
+                    id python:view.cssId and view.cssId or None"> 
+    
+    <dt class="portletHeader"> 
+        <span class="portletTopLeft"></span> 
+        <span i18n:translate="portlet_header_advertisment">Advertisment</span>
+        <span class="portletTopRight"></span> 
+    </dt>  
+    <dd class="portletItem">
+        <div tal:replace="structure view/code">
+            Code
+        </div>
+    </dd>
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span> 
+        <span class="portletBottomRight"></span> 
+    </dd>
+</dl>

@@ -1,0 +1,6 @@
+<div class="openx-banner"
+     tal:define="zone python:1;
+                 withText python:False;
+                 target string:_blank;">
+    <div tal:replace="structure python:view.code(zone, withText, target)">Banner</div>
+</div>
