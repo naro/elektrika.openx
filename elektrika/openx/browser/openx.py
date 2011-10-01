@@ -1,10 +1,5 @@
-from zope.interface import implements
 from zope.component import getUtility
-from Acquisition import aq_inner
 from Products.Five import BrowserView
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from plone.memoize import view
-
 from elektrika.openx.interfaces import IOpenXJSInvocation
 
 class OpenXView(BrowserView):

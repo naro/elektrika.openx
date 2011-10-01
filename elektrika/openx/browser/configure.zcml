@@ -15,7 +15,6 @@
         permission="zope.Public"
         allowed_attributes="code"
         />
-        
 
     <!-- To use this viewlet, add this code to your configure.zcml
     <browser:viewlet

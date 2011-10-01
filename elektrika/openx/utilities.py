@@ -23,7 +23,9 @@ class OpenXJSInvocation(object):
             # do not fail if site is not correctly determined (I experienced 
             # it eg. on inline validation)
             return
-        server = context.getProperty('openx_server', '')
+        
+        # force Acquisition. context.getProperty does not acquire ?
+        server = getattr(context, 'openx_server', '')
         
         if not server:
             logger.error("No OpenX server defined. Please set server URL in plone site property 'openx_server'. Do not include http:// in the server name!")
